@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Store - DonArc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">DonArc</div>
+        <nav>
+            <a href="#">Help</a>
+            <a href="#">Join Us</a>
+            <button class="find-store-btn" onclick="showMap()">Find a Store</button>
+        </nav>
+    </header>
+
+    <main class="map-container" id="map-container">
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <p>DonArc &copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

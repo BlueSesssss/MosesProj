@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .actions button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.banner .hero {
+    margin-top: 2rem;
+}
+
+.banner .hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem;
+    background: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Spotlight Section */
+.spotlight {
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.spotlight-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.spotlight .text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.spotlight .sale {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Trending Section */
+.trending {
+    padding: 2rem;
+}
+
+.trending h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.trending-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.trending .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
