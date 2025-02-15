@@ -2,15 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: #fff;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-bottom: 1px solid #ddd;
-    background: #f8f8f8;
 }
 .logo {
     text-decoration: none; /* Removes the underline */
@@ -18,60 +17,116 @@ header {
     font-size: 24px; /* Adjust the font size as needed */
     color: black; /* Ensure it has a visible color */
 }
-nav a {
-    margin-left: 20px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
 }
-.btn {
+.sign-in {
     background: black;
     color: white;
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 5px;
-    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
 }
-.search-container {
-    margin: 30px auto;
-    width: 50%;
-    position: relative;
+.help-section {
+    text-align: center;
+    padding: 50px 20px;
 }
-.search-box {
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 350px;
+}
+.search-bar input {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.chat-response {
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #f1f1f1;
-    text-align: left;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    border: none;
+    outline: none;
+    font-size: 14px;
 }
 .quick-assists {
-    padding: 20px;
-}
-.faq-columns {
-    display: flex;
-    justify-content: space-around;
+    max-width: 800px;
+    margin: 40px auto;
     text-align: left;
 }
+.quick-assists h2 {
+    font-size: 20px;
+}
+.quick-assists p {
+    color: #777;
+    font-size: 14px;
+}
+.assist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.assist-category h3 {
+    font-size: 16px;
+}
+.assist-category ul {
+    list-style: none;
+    padding: 0;
+}
+.assist-category ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
 .contact-us {
-    background: #f8f8f8;
-    padding: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
 }
 .contact-options {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 }
-footer {
-    background: #222;
-    color: white;
+.contact-item {
+    font-size: 14px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+.footer-section {
+    text-align: left;
+}
+.footer-section h3 {
+    font-size: 16px;
+}
+.footer-section a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+footer p {
+    text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    background: #f1f1f1;
+    margin: 0;
 }
