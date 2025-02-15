@@ -13,8 +13,10 @@ header {
     background: #f8f8f8;
 }
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: black; /* Ensure it has a visible color */
 }
 nav a {
     margin-left: 20px;

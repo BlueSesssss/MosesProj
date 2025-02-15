@@ -17,9 +17,11 @@ header {
     color: #fff;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo {
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: rgb(255, 255, 255); /* Ensure it has a visible color */
 }
 
 header nav ul {
@@ -30,7 +32,7 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 header .actions button {

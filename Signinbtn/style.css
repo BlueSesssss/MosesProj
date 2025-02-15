@@ -22,10 +22,12 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: black; /* Ensure it has a visible color */
 }
+
 
 nav a {
     margin-right: 1rem;

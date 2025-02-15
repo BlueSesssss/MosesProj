@@ -13,9 +13,11 @@ header {
     background-color: #f4f4f4;
 }
 
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+.logo {
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: black; /* Ensure it has a visible color */
 }
 
 header nav a {
