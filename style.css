@@ -39,10 +39,17 @@ header .actions button {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: none;
-    background: #fff;
-    color: #000;
     cursor: pointer;
 }
+
+
+header .actions nav a {
+    text-decoration: none; /* Removes the underline */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
 
 /* Banner Section */
 .banner {
@@ -57,7 +64,7 @@ header .actions button {
 }
 
 .banner a {
-    color: #007BFF;
+    color: #1369c5;
     text-decoration: none;
 }
 
