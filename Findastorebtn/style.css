@@ -21,7 +21,18 @@ nav a {
     text-decoration: none; /* Removes the underline */
     font-weight: bold; /* Makes the text bold */
     font-size: 24px; /* Adjust the font size as needed */
-    color: black; /* Ensure it has a visible color */
+    color: rgb(0, 0, 0); /* Ensure it has a visible color */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .find-store-btn {
