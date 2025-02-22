@@ -3,18 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
-    color: #333;
+    background-color: #f8f8f8;
 }
 
+/* Header */
 header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: #000;
-    color: #fff;
+    position: relative;
 }
 
 .logo {
@@ -23,6 +23,73 @@ header {
     font-size: 24px; /* Adjust the font size as needed */
     color: rgb(255, 255, 255); /* Ensure it has a visible color */
 }
+
+.zoom-effect {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.zoom-effect:hover {
+    transform: scale(1.2); /* Zoom in by 20% */
+}
+
+.warning {
+    background-color: #ffcc00;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Burger Menu (Hidden by Default) */
+.burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #333;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
 
 header nav ul {
     display: flex;

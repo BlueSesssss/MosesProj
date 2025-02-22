@@ -35,3 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Placeholder for adding more interactivity later
 });
+
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+}
