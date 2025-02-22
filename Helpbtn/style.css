@@ -130,3 +130,119 @@ footer p {
     background: #f1f1f1;
     margin: 0;
 }
+
+/* General Styles */
+.quick-assists {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center; /* Ensures the text inside is centered */
+    padding: 20px; /* Adds some spacing */
+}
+
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 📌 Responsive Grid Layout */
+.assist-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Expands based on screen size */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* 📌 Category Styling */
+.assist-category {
+    width: 100%;
+}
+
+/* 📌 Accordion (Small Screens Only) */
+@media (max-width: 768px) {
+    .accordion {
+        background: none;
+        border: none;
+        text-align: left;
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accordion::after {
+        content: "\25BE"; /* Down arrow */
+        font-size: 1.2em;
+        transition: transform 0.3s ease;
+    }
+
+    .active::after {
+        transform: rotate(180deg); /* Rotate arrow up when active */
+    }
+
+    .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    /* When expanded */
+    .panel.active {
+        max-height: 1000px; /* Large enough to fit most content */
+        padding: 10px 12px; /* Add padding back */
+    }
+    
+    
+}
+
+/* 📌 Large Screens - Show Content Without Accordion */
+@media (min-width: 769px) {
+    .accordion {
+        display: none; /* Hide accordion buttons */
+    }
+
+    .panel {
+        display: block !important; /* Always show content */
+    }
+}
+
+/* 📌 Links inside panel */
+.panel a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.95em;
+    margin: 5px 0;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+}
+
+/* 📌 Tablet View (2 Columns) */
+@media (min-width: 768px) {
+    .assist-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 📌 Desktop View (3 Columns) */
+@media (min-width: 1024px) {
+    .assist-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
